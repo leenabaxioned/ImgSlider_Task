@@ -120,13 +120,13 @@ li {
   object-fit: cover;
 }
 
-.slides figure { position: relative; }
+/* .slides figure { position: relative; } */
 
 .slides  { display: none; }
 
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1200px;
+.imgs-slider {
+  max-width: 1400px;
   position: relative;
   margin: auto;
 }
