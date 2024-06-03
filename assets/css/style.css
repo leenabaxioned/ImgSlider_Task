@@ -122,7 +122,18 @@ li {
 
 /* .slides figure { position: relative; } */
 
-.slides  { display: none; }
+.slides  { 
+  display: none; 
+  animation-name: sliding;
+  animation-duration: 4s; /* or: Xms */
+  animation-direction: alternate; /* or: normal */
+  animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-delay: 2s;
+}
+
+@keyframes sliding {
+  0%, 100%  { transition: all 1s; }
+}
 
 /* Slideshow container */
 .imgs-slider {
@@ -135,7 +146,7 @@ li {
 .prev, 
 .next {
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 45%;
   width: 30px;
   height: 30px;
@@ -174,7 +185,7 @@ li {
 
 /* slide-opacity div styling */
 .slide-opacity {
-  position: fixed;
+  position: absolute;
   height: auto;
   top: 0;
   left: 0;
