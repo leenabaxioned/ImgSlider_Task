@@ -48,5 +48,5 @@ function showSlides(n) {
   }
 
   slides[slideIndex].style.display = "block";
-  slides[slideIndex].style.transition = "all 3s ease-in-out 3s"
+ // slides[slideIndex].style.transition = "all 3s ease-in-out 3s"
 }
